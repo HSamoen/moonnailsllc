@@ -1,0 +1,64 @@
+.custom-hover:hover {
+    background-color: #333;
+    color: white;
+    border-color: transparent;
+  }
+
+  .bg-image {
+    background-image: url('https://www.aboutasheville.com/wp-content/uploads/2023/01/best-spas-and-wellness-experiences-in-asheville-nc-header.jpg');
+    background-size: cover; 
+    background-position: center center;
+    height: 500px;
+}
+
+
+  /* site responsiveness ---------------------------------------------------
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px){
+  .mask h1{
+    font-size: 30px;
+  }
+  
+  .mask h3{
+    font-size: 18px;
+  }
+  
+  .mask h5{
+    font-size: 15px;
+  }
+
+                                                                                                                                                    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width:601px) and (max-width:767px){
+.mask h1{
+  font-size: 25px;
+}
+
+.mask h3{
+  font-size: 18px;
+}
+
+.mask h5{
+  font-size: 14px;
+}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width:768px) and (max-width:991px){
+
+  .mask h1{
+    font-size: 30px;
+  }
+  
+  .mask h3{
+    font-size: 18px;
+  }
+  
+  .mask h5{
+    font-size: 15px;
+  }
+}

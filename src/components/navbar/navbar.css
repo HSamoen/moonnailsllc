@@ -1,0 +1,106 @@
+body {
+    font-family: 'Bodoni Moda', sans-serif;
+  }
+  
+.navbar-link {
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s;
+  }
+  
+  .navbar-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color:black; 
+    transition: width 0.3s;
+  }
+  
+  .navbar-link:hover {
+    color: black; 
+  }
+  
+  .navbar-link:hover::after {
+    width: 100%;
+  }
+  
+  .navbar{
+    padding: 45px;
+    margin-bottom: 10px;
+  }
+
+  .navbar-item{
+    padding-top: 15px;
+    padding-right: 25px;
+  }
+
+  .business-name {
+    font-size: 40px;
+    padding-left: 150px;
+    transition: color 0.3s; 
+}
+
+.business-name:hover {
+    color: #555;
+}
+
+
+
+/* site responsiveness --------------------------------------------------- */
+@media only screen and (max-width: 600px) {
+  .business-name {
+      font-size: 30px;
+      padding-left: 0;
+  }
+
+  .navbar {
+      padding: 20px;
+  }
+
+  .navbar-item {
+      padding-top: 10px;
+      padding-right: 15px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .business-name {
+      font-size: 35px;
+      padding-left: 0;
+  }
+
+  .navbar {
+      padding: 25px;
+  }
+
+  .navbar-item {
+      padding-top: 12px;
+      padding-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .business-name {
+      font-size: 40px;
+      padding-left: 0;
+  }
+
+  .navbar {
+      padding: 35px;
+  }
+
+  .navbar-item {
+      padding-top: 15px;
+      padding-right: 25px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .business-name {
+      font-size: 30px;
+      padding-left: 0;
+  }
+}

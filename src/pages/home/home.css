@@ -1,0 +1,134 @@
+body{
+    padding: 30px;
+}
+
+.layout {
+  display: flex;
+  gap: 16px;
+}
+
+body {
+    font-family: 'Bodoni Moda', sans-serif;
+  }
+
+.featured-services{
+padding: 200px;
+display: flex;
+flex-direction: row;
+}
+
+.featured-services-header{
+margin-right: 250px;
+}
+
+.featured-services-header h1{
+margin-bottom: 20px;
+}
+
+.mx-2{
+font-size: 15px;
+}
+
+.about-us-container{
+display: flex;
+flex-direction: row;
+}
+
+.about-us-header{
+margin-top:50px;
+}
+
+.about-us-header{
+font-size:50px;
+}
+
+.aboutus-img1{
+margin-top:400px;
+margin-left:400px;
+}
+
+.aboutus-img1 img{
+width: 80%;
+} 
+
+.aboutus-sec2{
+margin-top:150px;
+margin: 50px;
+}
+
+.aboutus-sec2 img{
+width: 80%;
+margin: 50px;
+}
+
+.our-services-container{
+margin: 150px;
+}
+
+.our-services-container h1{
+text-align: center;
+margin: 80px;
+}
+
+#ourservices{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+}
+
+.service-link {
+transition: transform 0.3s ease-in-out;
+}
+
+.service-link h3{
+margin-top:30px;
+}
+
+.service-link:hover {
+transform: scale(1.05);
+}
+.service-link img{
+transition: transform 0.3s;
+width: 50%;
+border-radius: 50%;
+}
+
+.service-link:hover img{
+transform: scale(1.1);
+}
+
+.custom-hover:hover {
+background-color: #333;
+color: white;
+border-color: transparent;
+font-size: 15px;
+}
+
+.browse-service-link{
+    padding: 100px;
+    text-align: center;
+}
+
+  /* site responsiveness ---------------------------------------------------
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px){
+                                                                                                                                                    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width:601px) and (max-width:767px){
+
+ 
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width:768px) and (max-width:991px){
+
+ 
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width:992px) and (max-width:1200px){
+
+} 

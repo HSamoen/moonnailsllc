@@ -1,0 +1,114 @@
+body{
+    padding: 30px;
+}
+
+.bg-img1{
+    height: 500px;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.service-menu-container h1{
+    padding: 50px;
+    margin-bottom: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.service-menu{
+    padding-left: 30px;
+    font-size: small;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 25px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.service-menu h3{
+    padding-bottom: 20px;
+    text-decoration: underline;
+}
+
+.service-menu h5{
+    padding-bottom:20px;
+}
+
+.service-menu a {
+    font-size: 30px;
+    text-decoration: underline;
+    color: #555;
+    margin-bottom: 20px; 
+    transition: font-size 0.3s, color 0.3s; 
+}
+
+.service-menu a:hover {
+    font-size: 32px; 
+    color: black;
+}
+
+.service-menu p {
+    margin: 10px 0; 
+}
+
+.service-info{
+    text-align: center;
+}
+
+ .service-info img{
+    height:450px;
+    width: 100%;
+    margin-bottom: 50px;
+} 
+
+.bg-img2{ 
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: bottom center; 
+}
+
+#mani{
+    margin-bottom:50px;
+}
+
+.pedi-services{
+    padding-left: 30px;
+    font-size: small;
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+}
+
+.pedi-service{
+    margin: 50px;
+}
+
+.complimentary{
+    margin-bottom: 300px;
+}
+
+  /* site responsiveness ---------------------------------------------------
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px){
+                                                                                                                                                    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width:601px) and (max-width:767px){
+
+ 
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width:768px) and (max-width:991px){
+
+ 
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width:992px) and (max-width:1200px){
+
+} 
