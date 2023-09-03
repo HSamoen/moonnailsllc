@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+// import {fa fa-chevron-down} from 'react-icons/fa';
 import './home.css'
 import {
   MDBBtn,
@@ -7,6 +8,19 @@ import {
 import Header from '../../components/header/header';
 
 const Home = () => {
+  const [isVisible, setIsVisible] = useState({
+    id:"none",
+  });
+
+  useEffect(() => {
+    console.log(isVisible);
+    },[isVisible]);
+
+    const toggleDiv = (e) => {
+      setIsVisible({
+      id: e.target.id,
+      });
+      }
     
   return (
     <div>
@@ -26,12 +40,48 @@ const Home = () => {
 
           {/* Add featured service drop down here with descriptions 
           exmaple services include : basic mani, basic pedi, spa pedi, and deuluxe pedi */}
-        <div>
-          <h3>Service 1 ------------------ +</h3>
-          <h3>Service 2 ------------------ +</h3>
-          <h3>Service 3 ------------------ +</h3>
-          <h3>Service 4 ------------------ +</h3>
+        <div className='services-options'>
+          <h3>Manicure 
+          <button className='serviceBtn' id ="option1" onClick={(e) => {toggleDiv(e)}}>⌄</button>
+            <div className ={isVisible.id === "option1" ? `option1` : "none"}>
+              <p>+ Basic Manicure</p>
+              <p>+ Spa Manicure</p>
+              <p>+ Gel Manicure</p>
+              <p>+ SNS Manicure</p>
+            </div>
+            
+          </h3>
+          <h3>Pedicure 
+          <button className='serviceBtn' id ="option2" onClick={(e) => {toggleDiv(e)}}>⌄</button>
+            <div className ={isVisible.id === "option2" ? `option2` : "none"}>
+              <p>+ Basic Pedicure</p>
+              <p>+ Spa Pedicure</p>
+              <p>+ Deluxe Pedicure</p>
+              <p>+ Jelly and Hot Stone Pedicure</p>
+            </div>
+          </h3>
+          <h3>Full sets 
+          <button className='serviceBtn' id ="option3" onClick={(e) => {toggleDiv(e)}}>⌄</button>
+            <div className ={isVisible.id === "option3" ? `option3` : "none"}>
+              <p>+ Full Set Acrylic</p>
+              <p>+ Full Set Acrylic w/ Gel Polish</p>
+              <p>+ Full Set Solar Pink and White</p>
+              <p>+ Full Set SNS </p>
+              <p>+ Refill Acrylic</p>
+              <p>+ Refill Acrylic w/ Gel</p>
+            </div>
+          </h3>
+          <h3>Polish Changes 
+          <button className='serviceBtn' id ="option4" onClick={(e) => {toggleDiv(e)}}>⌄</button>
+            <div className ={isVisible.id === "option4" ? `option4` : "none"}>
+              <p>+ Nail Gel Polish</p>
+              <p>+ Toes Gel polish</p>
+              <p>+ Regular Color Nails</p>
+              <p>+ Regular Color Toes</p>
+            </div>
+          </h3>
         </div>
+        
       </div>
 
       <div style={{ 

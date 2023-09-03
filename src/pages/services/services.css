@@ -17,6 +17,7 @@ body{
 }
 
 .service-menu{
+    border: solid green;
     padding-left: 30px;
     font-size: small;
     display: grid;
@@ -92,19 +93,35 @@ body{
   /* site responsiveness ---------------------------------------------------
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px){
+/* @media only screen and (max-width: 600px){
+
                                                                                                                                                     
-}
+} */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width:601px) and (max-width:767px){
+@media only screen and (max-width:767px){
 
+    .service-menu-container h1{
+        padding: 5px;
+        margin-bottom: 50px;
+        font-size: 1rem;
+    }
+
+    .pedi-services{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .pedi-service{
+        margin: 20px;
+    }
  
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width:768px) and (max-width:991px){
 
+    
  
 }
 

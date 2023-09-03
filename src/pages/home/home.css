@@ -12,7 +12,7 @@ body {
   }
 
 .featured-services{
-padding: 200px;
+padding: 100px;
 display: flex;
 flex-direction: row;
 }
@@ -23,6 +23,31 @@ margin-right: 250px;
 
 .featured-services-header h1{
 margin-bottom: 20px;
+}
+
+.services-options{
+  width: 80%;
+  padding: 20px;
+}
+
+.services-options h3{
+  border-top: 1px solid lightgrey;
+}
+
+.services-options p {
+  font-size: 15px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.serviceBtn{
+  border: none;
+  background-color: white;
+  float: right;
+}
+
+.none{
+  display: none;
 }
 
 .mx-2{
@@ -36,11 +61,12 @@ flex-direction: row;
 
 .about-us-header{
 margin-top:50px;
-}
-
-.about-us-header{
 font-size:50px;
 }
+
+/* .about-us-header{
+font-size:50px;
+} */
 
 .aboutus-img1{
 margin-top:400px;
@@ -71,9 +97,9 @@ margin: 80px;
 }
 
 #ourservices{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    text-align: center;
+display: grid;
+grid-template-columns: auto auto auto;
+text-align: center;
 }
 
 .service-link {
@@ -109,24 +135,68 @@ font-size: 15px;
     text-align: center;
 }
 
+
   /* site responsiveness ---------------------------------------------------
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px){
+/* Extra small devices (phones, 767px and down) */
+@media only screen and (max-width: 767px){
+  .featured-services{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .featured-services-header{
+      text-align: center;
+      width: 100%;
+    }
+    
+    .services-options{
+      width: 50%;
+      padding: 20px;
+      padding-top: 50px;
+      width: 100%;
+    }
+
+    .our-services-container{
+      margin: 0;
+    }
+    
+    .our-services-container h1{
+    text-align: center;
+    margin: 50px;
+    }
+    
+    .service-link h3{
+      margin-top:10px;
+      font-size: 20px;
+      }
                                                                                                                                                     
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width:601px) and (max-width:767px){
-
- 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width:768px) and (max-width:991px){
 
+  .featured-services{
+    padding: 20px;
+    }
+
+  .featured-services-header{
+    text-align: center;
+    width: 20%;
+  }
+  
+  .services-options{
+    padding: 20px;
+    padding-top: 50px;
+    width: 80%;
+  }
+
+  .our-services-container{
+    margin: 0;
+  }
  
-}
+} 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width:992px) and (max-width:1200px){

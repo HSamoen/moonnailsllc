@@ -16,17 +16,21 @@ const Footer = () => {
 
            <div class="location">
            <h2>Location</h2>
-            <p>
+            {/* <p>
             8639 Concord Mills
             Boulevard,
             Concord, NC 28027
-            </p>
+            </p> */}
+            <a href="https://goo.gl/maps/skeyJGa1ctqPQ1de8">8639 Concord Mills
+            Boulevard,
+            Concord, NC 28027</a>
            </div>
 
             <div class="contact">
             <h2>Contact</h2>
             <a href="tel:704-979-1989">(704) 979-1989</a>
             </div>
+            <div id='footer-ss-icons'>
           <MDBBtn outline color="dark" floating className='m-1' href='https://www.facebook.com/people/Concord-Nail-Tek/100095126682743/' role='button' target="_blank">
             <MDBIcon fab icon='facebook' size='2x' style={{ color: 'black' }} />
           </MDBBtn>
@@ -34,6 +38,7 @@ const Footer = () => {
           <MDBBtn outline color="dark" floating className='m-1' href='https://www.instagram.com/moonnails8639/' role='button' target="_blank">
             <MDBIcon fab icon='instagram' size='2x' style={{color:'black'}}/>
           </MDBBtn>
+          </div>
             </div>
 
 
