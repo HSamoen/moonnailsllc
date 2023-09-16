@@ -1,106 +1,145 @@
 body {
-    font-family: 'Bodoni Moda', sans-serif;
-  }
-  
+  font-family: 'Bodoni Moda', sans-serif;
+}
+
 .navbar-link {
-    text-decoration: none;
-    position: relative;
-    transition: color 0.3s;
-  }
-  
-  .navbar-link::after {
-    content: '';
-    position: absolute;
-    bottom: -5px; 
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color:black; 
-    transition: width 0.3s;
-  }
-  
-  .navbar-link:hover {
-    color: black; 
-  }
-  
-  .navbar-link:hover::after {
-    width: 100%;
-  }
-  
-  .navbar{
-    padding: 45px;
-    margin-bottom: 10px;
-  }
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s;
+}
 
-  .navbar-item{
-    padding-top: 15px;
-    padding-right: 25px;
-  }
+.navbar-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px; 
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color:black; 
+  transition: width 0.3s;
+}
 
-  .business-name {
-    font-size: 40px;
-    padding-left: 150px;
-    transition: color 0.3s; 
+.navbar-link:hover {
+  color: black; 
+}
+
+.navbar-link:hover::after {
+  width: 100%;
+}
+
+.navbar{
+  padding: 45px;
+  margin-bottom: 10px;
+}
+
+.navbar-item{
+  padding-top: 15px;
+  padding-right: 25px;
 }
 
 .business-name:hover {
-    color: #555;
+  color: #555;
+}
+
+.business-name{
+font-size: 50px;
+padding-right:430px;
+padding-top: 10px;
+color: black;
 }
 
 
+
+.social-icons {
+display: flex;
+flex-direction: row;
+align-items: center;
+margin-top: 10px;
+}
+
+.social-icons .icon {
+font-size: 1.5rem; 
+}
 
 /* site responsiveness --------------------------------------------------- */
-@media only screen and (max-width: 600px) {
-  .business-name {
-      font-size: 30px;
-      padding-left: 0;
-  }
-
-  .navbar {
-      padding: 20px;
-  }
-
-  .navbar-item {
-      padding-top: 10px;
-      padding-right: 15px;
-  }
+@media only screen and (max-width: 375px) {
+.social-icons .icon {
+  font-size: 1rem; 
 }
 
-@media only screen and (min-width: 601px) and (max-width: 767px) {
-  .business-name {
-      font-size: 35px;
-      padding-left: 0;
-  }
+.navbar {
+  padding: 20px;
+  text-align: center;
+}
 
-  .navbar {
-      padding: 25px;
-  }
+.navbar-item {
+  padding-right: 0; 
+  font-size: 10px;
+}
 
-  .navbar-item {
-      padding-top: 12px;
-      padding-right: 20px;
-  }
+.business-name {
+  font-size: 28px;
+  padding-right: 70px; 
+}
+
+.social-icons {
+  display: none;
+}
+
+}
+
+@media only screen and (min-width: 376px) and (max-width: 767px) {
+
+.social-icons .icon {
+  font-size: 1rem; 
+}
+
+.navbar {
+  padding: 20px;
+  /* text-align: center; */
+}
+
+.navbar-item {
+  padding-right: 0; 
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+.business-name {
+  font-size: 28px;
+  padding-right: 70px; 
+}
+
+.social-icons {
+  display: none;
+}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .business-name {
-      font-size: 40px;
-      padding-left: 0;
-  }
+.business-name {
+    font-size: 40px;
+    padding-left: 0;
+}
 
-  .navbar {
-      padding: 35px;
-  }
+.navbar {
+    padding: 35px;
+}
 
-  .navbar-item {
-      padding-top: 15px;
-      padding-right: 25px;
-  }
+.navbar-item {
+    padding-top: 15px;
+    padding-right: 25px;
+    margin-left: 10px;
+}
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .business-name {
-      font-size: 30px;
-      padding-left: 0;
+    font-size: 40px;
+    padding-right: 350px; 
   }
+
+.navbar-item {
+  padding-right: 0; 
+  font-size: 15px;
+}
 }

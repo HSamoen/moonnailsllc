@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './navbar.css';
 import {
   MDBContainer,
   MDBNavbar,
-  MDBNavbarBrand,
   MDBNavbarToggler,
   MDBNavbarNav,
   MDBNavbarItem,
@@ -15,6 +15,12 @@ import {
 
 export default function App() {
   const [showNav, setShowNav] = useState(false);
+  const [showSocialIcons, setShowSocialIcons] = useState(true); 
+
+  const toggleVisibility = () => {
+    setShowNav(!showNav);
+    setShowSocialIcons(!showSocialIcons); 
+  };
 
   return (
     <MDBNavbar expand='lg' light bgColor='light' className="navbar">
@@ -23,10 +29,11 @@ export default function App() {
           type='button'
           aria-expanded='false'
           aria-label='Toggle navigation'
-          onClick={() => setShowNav(!showNav)}
+          onClick={toggleVisibility}
         >
           <MDBIcon icon='bars' fas />
         </MDBNavbarToggler>
+
         <MDBCollapse navbar show={showNav}>
           <MDBNavbarNav>
             <MDBNavbarItem className='navbar-item'>
@@ -49,23 +56,28 @@ export default function App() {
                 Contacts
               </MDBNavbarLink>
             </MDBNavbarItem>
-            <MDBNavbarBrand href='/' className='business-name'>
-            Moon Nails
-          </MDBNavbarBrand>
           </MDBNavbarNav>
         </MDBCollapse>
-        
-        <div className='social-icons'>
-          <MDBBtn outline color="dark" floating className='m-1' href='https://www.facebook.com/people/Concord-Nail-Tek/100095126682743/' role='button' target="_blank">
-            <MDBIcon fab icon='facebook' size='2x' style={{ color: 'black' }} />
-          </MDBBtn>
 
-          <MDBBtn outline color="dark" floating className='m-1' href='https://www.instagram.com/moonnails8639/' role='button' target="_blank">
-            <MDBIcon fab icon='instagram' size='2x' style={{color:'black'}}/>
-          </MDBBtn>         
-        </div> 
+        <div>
+          <Link to="/" className='business-name'>
+            {showSocialIcons ? 'Moon Nails' : ''}
+          </Link>
+        </div>
+        {showSocialIcons && window.innerWidth > 375 && (
+          <div className='social-icons'>
+            <MDBBtn outline color="dark" floating className='m-1' href='https://www.facebook.com/people/Concord-Nail-Tek/100095126682743/' role='button' target="_blank">
+              <MDBIcon className='icon' fab icon='facebook' style={{ color: 'black' }} />
+            </MDBBtn>
+
+            <MDBBtn outline color="dark" floating className='m-1' href='https://www.instagram.com/moonnails8639/' role='button' target="_blank">
+              <MDBIcon className='icon' fab icon='instagram' style={{ color: 'black' }} />
+            </MDBBtn>
+          </div>
+)}
 
       </MDBContainer>
     </MDBNavbar>
   );
 }
+

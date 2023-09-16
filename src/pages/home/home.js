@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-// import {fa fa-chevron-down} from 'react-icons/fa';
 import './home.css'
 import {
   MDBBtn,
@@ -7,30 +6,54 @@ import {
 } from 'mdb-react-ui-kit';
 import Header from '../../components/header/header';
 
+
 const Home = () => {
   const [isVisible, setIsVisible] = useState({
-    id:"none",
+    id: "none",
   });
 
   useEffect(() => {
     console.log(isVisible);
-    },[isVisible]);
+  }, [isVisible]);
 
-    const toggleDiv = (e) => {
-      setIsVisible({
-      id: e.target.id,
+  const toggleDiv = (e) => {
+    setIsVisible((prevState) => ({
+      id: prevState.id === e.target.id ? "none" : e.target.id,
+    }));
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const elementsToFadeIn = document.querySelectorAll('.fade-in');
+
+      elementsToFadeIn.forEach((element) => {
+        const elementOffset = element.offsetTop;
+        const windowHeight = window.innerHeight;
+
+        if (scrollY > elementOffset - windowHeight / 2) {
+          element.classList.add('loaded');
+        } else {
+          element.classList.remove('loaded');
+        }
       });
-      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
     
   return (
     <div>
       <Header />
-      <div className="featured-services">
+      <div className="featured-services fade-in">
         <div className='featured-services-header'>
           <h1>Featured Services</h1>
           <MDBNavbarLink>
             <MDBBtn
-              rounded className='mx-2' color='black'
+              rounded className='mx-2 custom-button' color='black'
               href='#ourservices'
             >
               All Services
@@ -38,8 +61,7 @@ const Home = () => {
           </MDBNavbarLink>
         </div>
 
-          {/* Add featured service drop down here with descriptions 
-          exmaple services include : basic mani, basic pedi, spa pedi, and deuluxe pedi */}
+         
         <div className='services-options'>
           <h3>Manicure 
           <button className='serviceBtn' id ="option1" onClick={(e) => {toggleDiv(e)}}>⌄</button>
@@ -57,6 +79,7 @@ const Home = () => {
               <p>+ Basic Pedicure</p>
               <p>+ Spa Pedicure</p>
               <p>+ Deluxe Pedicure</p>
+              <p>+ Hot Stone Pedicure</p>
               <p>+ Jelly and Hot Stone Pedicure</p>
             </div>
           </h3>
@@ -84,42 +107,48 @@ const Home = () => {
         
       </div>
 
-      <div style={{ 
-            backgroundImage: "url('/images/img8.jpeg')",  
-            // backgroundImage: "url('https://images.unsplash.com/photo-1504198266287-1659872e6590?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80')",
-            height: 400,
-            width:"100%",
-             backgroundSize: "cover",
-             backgroundPosition: "center bottom" 
-             }}
-      ></div>
+<div className="aboutus-bg">
+  <img src="https://nailtrendspringgrove.com/uploads/fnail0afw5skl/logo/2019/10/07/SLIDE11-nwo.png" alt="About Us" />
+</div>
 
-      <div className="about-us-container">
-        <div className="about-us-header">
-            <h1>More About our Business</h1>
-        </div>
+<div className="about-us-container">
+  <div className="about-us-header">
+    <h1 className='fade-in'>About Our Business</h1>
+  </div>
 
-        <div className="aboutus-img1">
-        <img src="/images/image1.avif" alt=""></img>
-        </div>
+  <div className="aboutus-img1">
+    <img src="/images/image1.avif" alt="aboutus" />
+  </div>
 
-        <div className="aboutus-sec2">
-        <img src="/images/image3.avif" alt=""></img>
-        <p>Our small business-owned nail salon is run by three highly skilled nail technicians with years of industry expertise. They specialize in a wide range of nail care services such as SNS, acrylic, gel, and so on.</p>
-        <p>Their goal is to provide their clients with the best possible service while maintaining the highest standard of sanitization.</p>
-        <p>Explore our gallery to see some of their greatest works over the years, along with those of other incredibly skilled nail technicians.</p>
-        <MDBNavbarLink>
-            <MDBBtn
-              outline rounded className='mx-2 custom-hover' color='black'
-              href='gallery'
-            >
-              Gallery
-            </MDBBtn>
-          </MDBNavbarLink>
-        </div>
-      </div>
+  <div className="aboutus-sec2">
+    <img src="/images/image3.avif" alt="aboutus" />
+    <p className='fade-in'>
+      Our small business-owned nail salon is run by three highly skilled nail technicians with years of industry expertise. They specialize in a wide range of nail care services such as SNS, acrylic, gel, and more.
+    </p>
+    <p className='fade-in'>
+      Their goal is to provide their clients with the best possible care while maintaining the highest standard of sanitization.
+    </p>
+    <p className='fade-in'>
+      Explore our gallery to see some of their greatest works over the years, along with those of other incredibly skilled nail technicians.
+    </p>
+    <div className="browse-gallery-link ">
+      <MDBNavbarLink>
+        <MDBBtn
+          outline
+          rounded
+          className="mx-2 custom-hover custom-small-button fade-in"
+          color="black"
+          href="gallery"
+        >
+          Gallery
+        </MDBBtn>
+      </MDBNavbarLink>
+    </div>
+  </div>
+</div>
 
-       <div className="our-services-container">
+
+       <div className="our-services-container fade-in">
             <h1>Our Services</h1>
 
             <div id='ourservices'>
@@ -196,7 +225,7 @@ const Home = () => {
             
             <MDBNavbarLink className="browse-service-link">
                         <MDBBtn
-                        outline rounded className='mx-2 custom-hover' color='black'
+                        outline rounded className='mx-2 custom-hover fade-in' color='black'
                         href='services'
                         >
                         Browse Services

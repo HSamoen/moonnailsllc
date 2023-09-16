@@ -1,5 +1,5 @@
 body{
-    padding: 30px;
+    padding: 10px;
 }
 
 .layout {
@@ -26,8 +26,8 @@ margin-bottom: 20px;
 }
 
 .services-options{
-  width: 80%;
-  padding: 20px;
+  width: 40%;
+  padding: 50px;
 }
 
 .services-options h3{
@@ -54,37 +54,41 @@ margin-bottom: 20px;
 font-size: 15px;
 }
 
-.about-us-container{
-display: flex;
-flex-direction: row;
+.aboutus-bg img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center bottom;
 }
 
-.about-us-header{
-margin-top:50px;
-font-size:50px;
+.about-us-container {
+  display: flex;
+  flex-direction: row;
+  padding: 0 100px; 
 }
 
-/* .about-us-header{
-font-size:50px;
-} */
-
-.aboutus-img1{
-margin-top:400px;
-margin-left:400px;
+.aboutus-img1 {
+  margin-top: 400px;
+  margin-left: 200px;
 }
 
-.aboutus-img1 img{
-width: 80%;
-} 
-
-.aboutus-sec2{
-margin-top:150px;
-margin: 50px;
+.aboutus-img1 img {
+  width: 80%;
 }
 
-.aboutus-sec2 img{
-width: 80%;
-margin: 50px;
+.aboutus-sec2 {
+  margin-top: 150px;
+  margin: 50px;
+}
+
+.aboutus-sec2 img {
+  width: 70%;
+  margin: 50px;
+}
+
+.about-us-header {
+  margin-top: 50px;
+  font-size: 50px;
 }
 
 .our-services-container{
@@ -138,12 +142,25 @@ font-size: 15px;
 
   /* site responsiveness ---------------------------------------------------
 
-/* Extra small devices (phones, 767px and down) */
-@media only screen and (max-width: 767px){
+Extra small devices (phones, 375px and down) */
+@media only screen and (max-width: 375px){
+  body{
+    padding: 5px;
+}
+
   .featured-services{
     padding: 30px;
     display: flex;
     flex-direction: column;
+    }
+
+    .custom-button {
+      font-size: 10px; 
+      padding: 8px 16px; 
+    }
+
+    .featured-services h1{
+      font-size: 20px;
     }
 
     .featured-services-header{
@@ -158,6 +175,56 @@ font-size: 15px;
       width: 100%;
     }
 
+    .services-options h3{
+      font-size: 15px;
+    }
+
+    .services-options p{
+      font-size: 10px;
+    }
+
+    .aboutus-bg img {
+      height: 150px; 
+      width: 100%; 
+      object-fit: cover; 
+      object-position: center bottom; 
+    }
+
+    .aboutus-img1,
+    .aboutus-sec2 img {
+      display: none; 
+    }
+
+  .about-us-header h1{
+    text-align: center;
+    font-size: 25px;
+    }
+
+    .aboutus-sec2 p{
+      text-align: center;
+      font-size: 10px;
+    }
+    
+    .about-us-container {
+      flex-direction: column; 
+      padding: 0 20px;
+    }
+  
+    .about-us-header {
+      font-size: 30px;
+    }
+
+    .browse-gallery-link {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .browse-gallery-link .custom-small-button {
+      font-size: 10px;
+    }
+
+
     .our-services-container{
       margin: 0;
     }
@@ -165,40 +232,465 @@ font-size: 15px;
     .our-services-container h1{
     text-align: center;
     margin: 50px;
+    font-size: 20px;
     }
     
-    .service-link h3{
-      margin-top:10px;
+    .our-services-container .service-link h3 {
+      font-size: 15px;
+    }
+
+    .service-link {
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .service-link h3 {
+      margin-top: 30px;
+    }
+  
+    .service-link:hover {
+      transform: scale(1.05);
+    }
+  
+    .service-link img {
+      transition: transform 0.3s;
+      width: 50%;
+      border-radius: 50%;
+    }
+  
+    .service-link:hover img {
+      transform: scale(1.1);
+    }
+
+    .browse-service-link .custom-hover {
+      font-size: 10px;
+    }
+                                                                                                                                                    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 376px) and (max-width: 767px){
+
+
+  body{
+    padding: 5px;
+}
+
+  .featured-services{
+    /* padding: 30px; */
+    display: flex;
+    flex-direction: column;
+    }
+
+    .custom-button {
+      font-size: 10px; 
+      padding: 8px 16px; 
+    }
+
+    .featured-services h1{
       font-size: 20px;
-      }
+    }
+
+    .featured-services-header{
+      text-align: center;
+      width: 100%;
+    }
+    
+    .services-options{
+      width: 50%;
+      padding-top: 50px;
+      width: 100%;
+    }
+
+    .services-options h3{
+      font-size: 20px;
+    }
+
+    .services-options p{
+      font-size: 12px;
+    }
+
+    .aboutus-bg img {
+      height: 150px; 
+      width: 100%; 
+      object-fit: cover; 
+      object-position: center bottom; 
+    }
+
+    .aboutus-img1,
+    .aboutus-sec2 img {
+      display: none; 
+    }
+
+  .about-us-header h1{
+    text-align: center;
+    font-size: 25px;
+    }
+
+    .aboutus-sec2 p{
+      text-align: center;
+      font-size: 10px;
+    }
+    
+    .about-us-container {
+      flex-direction: column; 
+      padding: 0 20px;
+    }
+  
+    .about-us-header {
+      font-size: 30px;
+    }
+
+    .browse-gallery-link {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .browse-gallery-link .custom-small-button {
+      font-size: 10px;
+    }
+
+
+    .our-services-container{
+      margin: 0;
+    }
+    
+    .our-services-container h1{
+    text-align: center;
+    margin: 50px;
+    font-size: 20px;
+    }
+    
+    .our-services-container .service-link h3 {
+      font-size: 15px;
+    }
+
+    .service-link {
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .service-link h3 {
+      margin-top: 30px;
+    }
+  
+    .service-link:hover {
+      transform: scale(1.05);
+    }
+  
+    .service-link img {
+      transition: transform 0.3s;
+      width: 50%;
+      border-radius: 50%;
+    }
+  
+    .service-link:hover img {
+      transform: scale(1.1);
+    }
+
+    .browse-service-link .custom-hover {
+      font-size: 10px;
+    }
                                                                                                                                                     
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width:768px) and (max-width:991px){
 
-  .featured-services{
-    padding: 20px;
-    }
+  body{
+    padding: 10px;
+}
 
-  .featured-services-header{
+.layout {
+  display: flex;
+  gap: 16px;
+}
+
+body {
+    font-family: 'Bodoni Moda', sans-serif;
+  }
+
+.featured-services{
+padding: 50px;
+display: flex;
+flex-direction: row;
+}
+
+.featured-services-header{
+margin-right: 230px;
+}
+
+.featured-services-header h1{
+margin-bottom: 20px;
+font-size: 25px;;
+}
+
+.services-options{
+  width: 40%;
+  padding: 50px;
+}
+
+.services-options h3{
+  border-top: 1px solid lightgrey;
+  font-size: 20px;
+}
+
+.services-options p {
+  font-size: 12px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.serviceBtn{
+  border: none;
+  background-color: white;
+  float: right;
+}
+
+.none{
+  display: none;
+}
+
+.mx-2{
+font-size: 15px;
+}
+
+.aboutus-bg img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+.about-us-container {
+  display: flex;
+  flex-direction: row;
+  padding: 0 60px; 
+}
+
+.aboutus-img1 {
+  margin-top: 300px;
+  margin-left: 100px;
+}
+
+.aboutus-img1 img {
+  width: 70%;
+}
+
+.aboutus-sec2 {
+  margin-top: 150px;
+  margin: 30px;
+}
+
+.aboutus-sec2 p{
+  font-size: 12px;
+}
+
+.aboutus-sec2 img {
+  width: 60%;
+  margin: 50px;
+}
+
+.about-us-header {
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.our-services-container{
+margin: 100px;
+}
+
+.our-services-container h1{
+text-align: center;
+margin: 80px;
+}
+
+#ourservices{
+display: grid;
+grid-template-columns: auto auto auto;
+text-align: center;
+}
+
+#ourservices h3{
+  font-size: 18px;
+}
+
+.service-link {
+transition: transform 0.3s ease-in-out;
+}
+
+.service-link h3{
+margin-top:30px;
+}
+
+.service-link:hover {
+transform: scale(1.05);
+}
+.service-link img{
+transition: transform 0.3s;
+width: 50%;
+border-radius: 50%;
+}
+
+.service-link:hover img{
+transform: scale(1.1);
+}
+
+.custom-hover:hover {
+background-color: #333;
+color: white;
+border-color: transparent;
+font-size: 15px;
+}
+
+.browse-service-link{
+    padding: 100px;
     text-align: center;
-    width: 20%;
-  }
-  
-  .services-options{
-    padding: 20px;
-    padding-top: 50px;
-    width: 80%;
-  }
-
-  .our-services-container{
-    margin: 0;
-  }
+}
  
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width:992px) and (max-width:1200px){
 
+body {
+    font-family: 'Bodoni Moda', sans-serif;
+  }
+
+.featured-services{
+padding: 80px;
+display: flex;
+flex-direction: row;
+}
+
+.featured-services-header{
+margin-right: 250px;
+}
+
+.featured-services-header h1{
+margin-bottom: 20px;
+font-size: 30px;;
+}
+
+.services-options{
+  width: 40%;
+  padding: 50px;
+}
+
+.services-options h3{
+  border-top: 1px solid lightgrey;
+  font-size: 25px;
+}
+
+.services-options p {
+  font-size: 15px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.serviceBtn{
+  border: none;
+  background-color: white;
+  float: right;
+}
+
+.none{
+  display: none;
+}
+
+.mx-2{
+font-size: 15px;
+}
+
+.aboutus-bg img {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+.about-us-container {
+  display: flex;
+  flex-direction: row;
+  padding: 0 60px; 
+}
+
+.aboutus-img1 {
+  margin-top: 300px;
+  margin-left: 100px;
+}
+
+.aboutus-img1 img {
+  width: 70%;
+}
+
+.aboutus-sec2 {
+  margin-top: 150px;
+  margin: 30px;
+}
+
+.aboutus-sec2 p{
+  font-size: 15px;
+}
+
+.aboutus-sec2 img {
+  width: 60%;
+  margin: 50px;
+}
+
+.about-us-header {
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.our-services-container{
+margin: 100px;
+}
+
+.our-services-container h1{
+text-align: center;
+margin: 80px;
+}
+
+#ourservices{
+display: grid;
+grid-template-columns: auto auto auto;
+text-align: center;
+}
+
+#ourservices h3{
+  font-size: 20px;
+}
+
+.service-link {
+transition: transform 0.3s ease-in-out;
+}
+
+.service-link h3{
+margin-top:30px;
+}
+
+.service-link:hover {
+transform: scale(1.05);
+}
+.service-link img{
+transition: transform 0.3s;
+width: 50%;
+border-radius: 50%;
+}
+
+.service-link:hover img{
+transform: scale(1.1);
+}
+
+.custom-hover:hover {
+background-color: #333;
+color: white;
+border-color: transparent;
+font-size: 15px;
+}
+
+.browse-service-link{
+    padding: 100px;
+    text-align: center;
+}
 } 

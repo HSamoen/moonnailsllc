@@ -1,10 +1,6 @@
-body{
-    padding: 30px;
-}
-
 .message {
     text-align: center;
-    padding: 50px;
+    padding: 80px;
     color: black; 
 }
 
@@ -27,31 +23,38 @@ body{
 
 .payment-icons{
     color: black;
-    margin-right: 10px;
+    margin-left: 10px;
 } 
 
-
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+  }
+  
+  .fade-in.loaded {
+    opacity: 1;
+  }
   /* site responsiveness ---------------------------------------------------
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px){
+/* Extra small devices (phones, 375px and down) */
+@media only screen and (max-width: 375px){
+    .message p{
+        font-size: 10px;
+    }
+    .message a{
+        font-size: 10px;
+    }
                                                                                                                                                     
    }
    
-   /* Small devices (portrait tablets and large phones, 600px and up) */
-   @media only screen and (min-width:601px) and (max-width:767px){
-  
-    
+   /* Small devices (portrait tablets and large phones, 376px and up) */
+   @media only screen and (min-width:376px) and (max-width:767px){
+    .message p{
+        font-size: 12px;
+    }
+    .message a{
+        font-size: 12px;
+    }
   }
-   
-   /* Medium devices (landscape tablets, 768px and up) */
-   @media only screen and (min-width:768px) and (max-width:991px){
-   
-    
-   }
-   
-   /* Large devices (laptops/desktops, 992px and up) */
-   @media only screen and (min-width:992px) and (max-width:1200px){
 
-   } 
    

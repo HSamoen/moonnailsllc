@@ -1,132 +1,243 @@
-import React from 'react'
+import React , { useEffect }from 'react';
+import { MDBListGroup, MDBListGroupItem } from 'mdb-react-ui-kit';
 import './services.css'
 
-
-const Services = () => {
+export default function App() {
+    // useEffect(() => {
+    //     const elementsToFadeIn = document.querySelectorAll('.fade-in');
+    //     elementsToFadeIn.forEach((element) => {
+    //       element.classList.add('loaded');
+    //     });
+    //   }, []);
+    useEffect(() => {
+        const handleScroll = () => {
+          const scrollY = window.scrollY;
+          const elementsToFadeIn = document.querySelectorAll('.fade-in');
     
-    return (
-        <div className='service-menu-container'>
-            <div className="bg-img1" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1504198266287-1659872e6590?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80')"}}></div>
-
-            <h1>Service Menu</h1>
-
-            {/* Add category dropdown for each service menu */}
-
-            <div className="service-menu">
-               
-                <div className="manicures">
-                    <a href="#mani">Manicures</a>
-                    <p>+ Basic Manicure</p>
-                    <p>+ Spa Manicure</p>
-                    <p>+ Gel Manicure</p>
-                    <p>+ SNS Manicure</p>
-                </div>
-
-                <div className="pedicures">
-                    <a href="#pedi-treatments">Pedicures</a>
-                    <p>+ Basic Pedicure</p>
-                    <p>+ Spa Pedicure</p>
-                    <p>+ Deluxe Pedicure</p>
-                    <p>+ Jelly and Hot Stone Pedicure</p>
-                </div>
-
-                <div className="fullsets">
-                    <h3>Full Sets and Fill-Ins</h3>
-                    <p>+ Full Set Acrylic</p>
-                    <p>+ Full Set Acrylic w/ Gel Polish</p>
-                    <p>+ Full Set Solar Pink and White</p>
-                    <p>+ Full Set SNS </p>
-                    <p>+ Refill Acrylic</p>
-                    <p>+ Refill Acrylic w/ Gel</p>
-                </div>
-
-                <div className="polish-changes">
-                    <h3>Polish Changes</h3>
-                    <p>+ Nail Gel Polish</p>
-                    <p>+ Toes Gel polish</p>
-                    <p>+ Regular Color Nails</p>
-                    <p>+ Regular Color Toes</p>
-                </div>
-
-                <div className='waxing'>
-                    <h3>Wax/ Hair Removal</h3>
-                    <p>+ Eyebrow</p>
-                    <p>+ Lip</p>
-                    <p>+ Chin</p>
-                    <p>+ Cheek</p>
-                    <p>+ Full Face</p>
-                    <p>+ Under-arm</p>
-                    <p>+ Half Legs</p>
-                    <p>+ Full Legs</p>
-                </div>
-
-                <div className='kids menu'>
-                    <h3>Kids Menu</h3>
-                    <h5>(9yrs and below)</h5>
-
-                    <p>+ Kids Pedicure</p>
-                    <p>+ Kids Manicure</p>
-                    <p>+ Kids Polish Toes</p>
-                    <p>+ Kids Polish Hands</p>
-                </div>
+          elementsToFadeIn.forEach((element) => {
+            const elementOffset = element.offsetTop;
+            const windowHeight = window.innerHeight;
+    
+            if (scrollY > elementOffset - windowHeight / 2) {
+              element.classList.add('loaded');
+            } else {
+              element.classList.remove('loaded');
+            }
+          });
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
+    
+  return (
+    
+    <div  className='all-services'>
+        <div>
+            <h1 className='fade-in'>ALL SERVICES</h1>
+        <div className='service-item fade-in' 
+        >
+            <div>
+            <img src="/images/mani.jpeg" alt="mani" />
             </div>
-
-           <div className='service-info'>
-           {/* <div className='bg-img2' style={{ backgroundImage: "url('https://images.unsplash.com/photo-1598104358204-87cefc7c5986?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3009&q=80')"}}></div> */}
-           <div className='bg-img2' style={{ backgroundImage: "url('/images/nailservice.webp')"}}></div>
-
-
-                <div id="mani">
-                    <h1>-----------------------------Manicure-----------------------------</h1>
-                    <h2>Basic Manicure</h2>
-                    <p>Includes the basic cleaning of nails with cuticles trimmed, nails shaping, massage and choice of polish</p>
-                </div>
-
-                <div id='pedi-treatments'>
-                    <h1>---------------------Pedicure Treatments---------------------</h1>
-                    <div className='pedi-services'>
-                        <div className='pedi-service'>
-                            <h2>Basic Pedicure</h2>
-                            <p>Includes the basic cleaning of toe nails with cuticles trimmed, nails shaping, light exfoliation, massage and choice of polish</p>
-                        </div>
-
-                        <div className='pedi-service'>
-                            <h2>Spa Pedicure</h2>
-                            <p>Includes all features of the basic pedicure with lavender mask, hot towels, intense massage followed with a warm paraffin treatment</p>
-                        </div>
-                            
-                        <div className='pedi-service'>
-                            <h2>Deluxe Pedicure</h2>
-                            <h5>(in a box)</h5>
-                            <p>All our scented delux pedicures include everything you can imagine in a pedicure. A scented mico-exfoliation sugar scrub of your choosing to exfoliate your skin and masque is applied to gently tighten back up the skin. All followed by a relaxing massage and legs wrapped in hot towels. The pedicure is finished off with warm paraffin treatment</p>
-
-                            <h5>Scents</h5>
-                            <p>+ Lemon</p>
-                            <p>+ Green Tea</p>
-                            <p>+ Orange</p>
-                            <p>+ Mango</p>
-                            <p>+ Lavender</p>
-                            <p>+ Rose</p>
-                        </div>
-
-                        <div className='pedi-service'>
-                            <h2>Jelly and Hot Stone Pedicure</h2>
-                            <p>Includes all the Spa Pedicure but with a touch of playfulness. The foot bath is filled with translucent fluffy jelly instead of water. The jelly can feel soothing on sun soaked skin or retains heat during the winter months. The pedicure is finished with hot stone massage</p>
-                        </div>
-                     </div>
-                </div>
-
-                <div className='complimentary'> 
-                    <h1>------------------------Complimentary------------------------</h1>
-                    <p>+ Water</p>
-                    <p>+ Coke</p>
-                    <p>+ Red Wine</p>
-                    <p>+ White Wine</p>
-                </div>
-             </div>
-
+            <div>
+            <MDBListGroup style={{ minWidth: '22rem' }} light className='mb-3'>
+        <MDBListGroupItem>
+            <h2 style={{marginBottom:50}}>MANICURES</h2>
+          <h5 className='fw-bold'>Basic Manicure</h5>
+          <p className='text-muted mb-0'>
+          Includes the basic cleaning of nails with cuticles trimmed, nails shaping, light exfoliation, massage and choice of polish
+          </p>
+        </MDBListGroupItem>
+        <MDBListGroupItem>
+          <h5 className='fw-bold'>Spa Manicure</h5>
+        </MDBListGroupItem>
+        <MDBListGroupItem>
+          <h5 className='fw-bold'>Gel Manicure</h5>
+        </MDBListGroupItem>
+        <MDBListGroupItem>
+          <h5 className='fw-bold'>SNS Manicure</h5>
+        </MDBListGroupItem>
+      </MDBListGroup>
+            </div>
         </div>
-    )
-}
 
-export default Services;
+
+        <div className='service-item fade-in' 
+        >
+            <div>
+            <img src="/images/pedi.jpeg" alt="pedi" />
+            </div>
+            <div>
+            <MDBListGroup style={{ minWidth: '22rem' }} light className='mb-3'>
+        <MDBListGroupItem>
+            <h2 style={{marginBottom:50}}>PEDICURE TREATMENTS</h2>
+          <h5 className='fw-bold'>Basic Pedicure</h5>
+          <p className='text-muted mb-0'>
+          Includes the basic cleaning of toe nails with cuticles trimmed, nails shaping, light exfoliation, massage and choice of polish         
+          </p>
+        </MDBListGroupItem>
+        <MDBListGroupItem>
+          <h5 className='fw-bold'>Spa Pedicure</h5>
+          <p className='text-muted mb-0'>
+          Includes all features of the basic pedicure with lavender mask, hot towels, intense massage followed with a warm paraffin treatment
+          </p>
+        </MDBListGroupItem>
+        <MDBListGroupItem>
+          <h5 className='fw-bold'>Deluxe Pedicure</h5>
+          <p className='text-muted mb-2 fw-bold'>(in a box)</p>
+          <p className='text-muted mb-0'>
+          All our scented deluxe pedicures include everything you can imagine in a pedicure. A scented mico-exfoliation sugar scrub of your choosing to exfoliate your skin and masque is applied to gently tighten back up the skin. All followed by a relaxing massage and legs wrapped in hot towels. The pedicure is finished off with warm paraffin treatment
+          </p>
+          <p className='text-muted mb-2 fw-bold' style={{marginTop:10}}>+ Lemon</p>
+          <p className='text-muted mb-2 fw-bold'>+ Green Tea</p>
+          <p className='text-muted mb-2 fw-bold'>+ Orange</p>
+          <p className='text-muted mb-2 fw-bold'>+ Mango</p>
+          <p className='text-muted mb-2 fw-bold'>+ Lavender</p>
+          <p className='text-muted mb-2 fw-bold'>+ Rose</p>
+        </MDBListGroupItem>
+        <MDBListGroupItem>
+          <h5 className='fw-bold'>Hot Stone Pedicure</h5>
+          <p className='text-muted mb-0'>
+          Includes all features of the Spa Pedicure but with a hot stone massage for pain relief, relaxation, and therapy</p>
+        </MDBListGroupItem>
+        <MDBListGroupItem>
+          <h5 className='fw-bold'>Jelly and Hot Stone Pedicure</h5>
+          <p className='text-muted mb-0'>
+          Includes all features of the Spa Pedicure but with a touch of playfulness. The foot bath is filled with translucent fluffy jelly instead of water. The jelly can feel soothing on sun soaked skin or retains heat during the winter months. The pedicure is finished with hot stone massage
+          </p>
+        </MDBListGroupItem>
+      </MDBListGroup>
+            </div>
+        </div>
+
+
+        <div className='service-item fade-in' 
+        >
+            <div>
+            <img src="/images/fullset.png" alt="fullset" />
+            </div>
+            <div>
+            <MDBListGroup style={{ minWidth: '22rem' }} light className='mb-3'>
+        <MDBListGroupItem>
+            <h2 style={{marginBottom:50}}>FULLSETS/ FILL-INS</h2>
+        </MDBListGroupItem>
+        <MDBListGroupItem>
+          <h5 className='fw-bold'>Full Set Acrylic</h5>
+        </MDBListGroupItem>
+        <MDBListGroupItem>
+          <h5 className='fw-bold'>Full Set Acrylic w/ Gel Polish</h5>
+        </MDBListGroupItem>
+        <MDBListGroupItem>
+          <h5 className='fw-bold'>Full Set Solar Pink and White</h5>
+        </MDBListGroupItem>
+        <MDBListGroupItem>
+          <h5 className='fw-bold'>Full Set SNS</h5>
+        </MDBListGroupItem>
+        <MDBListGroupItem>
+          <h5 className='fw-bold'>Refill Acrylic</h5>
+        </MDBListGroupItem>
+        <MDBListGroupItem>
+          <h5 className='fw-bold'>Refill Acrylic w/ Gel</h5>
+        </MDBListGroupItem>
+      </MDBListGroup>
+            </div>
+        </div>
+
+
+        <div className='service-item fade-in' 
+        >
+            <div>
+            <img src="/images/polishchange.jpeg" alt="pedi"/>
+            </div>
+            <div>
+            <MDBListGroup style={{ minWidth: '22rem' }} light className='mb-3'>
+        <MDBListGroupItem>
+            <h2 style={{marginBottom:50}}>POLISH CHANGES</h2>
+        </MDBListGroupItem>
+        <MDBListGroupItem>
+          <h5 className='fw-bold'>Nail Gel Polish</h5>
+        </MDBListGroupItem>
+        <MDBListGroupItem>
+          <h5 className='fw-bold'>Toes Gel polish</h5>
+        </MDBListGroupItem>
+        <MDBListGroupItem>
+          <h5 className='fw-bold'>Regular Color Nails</h5>
+        </MDBListGroupItem>
+        <MDBListGroupItem>
+          <h5 className='fw-bold'>Regular Color Toes</h5>
+        </MDBListGroupItem>
+      </MDBListGroup>
+            </div>
+        </div>
+
+
+        <div className='service-item fade-in' 
+        >
+            <div>
+            <img src="/images/waxing.jpeg" alt="waxing" />
+            </div>
+            <div>
+            <MDBListGroup style={{ minWidth: '22rem' }} light className='mb-3'>
+        <MDBListGroupItem>
+            <h2 style={{marginBottom:50}}>WAX/ HAIR REMOVAL</h2>
+        </MDBListGroupItem>
+        <MDBListGroupItem>
+          <h5 className='fw-bold'>Eyebrow</h5>
+        </MDBListGroupItem>
+        <MDBListGroupItem>
+          <h5 className='fw-bold'>Lip</h5>
+        </MDBListGroupItem>
+        <MDBListGroupItem>
+          <h5 className='fw-bold'>Chin</h5>
+        </MDBListGroupItem>
+        <MDBListGroupItem>
+          <h5 className='fw-bold'>Cheek</h5>
+        </MDBListGroupItem>
+        <MDBListGroupItem>
+          <h5 className='fw-bold'>Full Face</h5>
+        </MDBListGroupItem>
+        <MDBListGroupItem>
+          <h5 className='fw-bold'>Under-arm</h5>
+        </MDBListGroupItem>
+        <MDBListGroupItem>
+          <h5 className='fw-bold'>Half Legs</h5>
+        </MDBListGroupItem>
+        <MDBListGroupItem>
+          <h5 className='fw-bold'>Full Legs</h5>
+        </MDBListGroupItem>
+      </MDBListGroup>
+            </div>
+        </div>
+
+        <div className='service-item fade-in' 
+        >
+            <div>
+            <img src="/images/kids.jpeg" alt="pedi"/>
+            </div>
+            <div>
+            <MDBListGroup style={{ minWidth: '22rem' }} light className='mb-3'>
+        <MDBListGroupItem>
+            <h2 style={{marginBottom:50}}>KIDS MENU</h2>
+        </MDBListGroupItem>
+        <MDBListGroupItem>
+          <h5 className='fw-bold'>Kids Pedicure</h5>
+        </MDBListGroupItem>
+        <MDBListGroupItem>
+          <h5 className='fw-bold'>Kids Manicure</h5>
+        </MDBListGroupItem>
+        <MDBListGroupItem>
+          <h5 className='fw-bold'>Kids Polish Toes</h5>
+        </MDBListGroupItem>
+        <MDBListGroupItem>
+          <h5 className='fw-bold'>Kids Polish Hands</h5>
+        </MDBListGroupItem>
+      </MDBListGroup>
+            </div>
+        </div>
+    </div>
+    </div>
+  );
+}

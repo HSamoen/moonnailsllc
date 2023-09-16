@@ -1,131 +1,209 @@
-body{
-    padding: 30px;
+.all-services{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
 }
 
-.bg-img1{
-    height: 500px;
-    width:100%;
-    background-size: cover;
-    background-position: center;
+.all-services h1{
+    margin:50px;
+    padding: 10px;
+    border-bottom:1px solid silver;
 }
 
-.service-menu-container h1{
-    padding: 50px;
-    margin-bottom: 50px;
-    font-size: 50px;
-    text-align: center;
+.service-item{
+        display: grid;
+        grid-template-columns: 40% auto;
+        align-items: center;
+        margin: 50px;
 }
 
-.service-menu{
-    border: solid green;
-    padding-left: 30px;
-    font-size: small;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 25px;
-    text-align: center;
-    margin-bottom: 50px;
+.all-services h2{
+    margin-bottom:100px;
 }
 
-.service-menu h3{
-    padding-bottom: 20px;
-    text-decoration: underline;
+.service-item img {
+    display: block;
+    margin: 0 auto; 
+    width:50%;
+    border-radius: 10px;
 }
 
-.service-menu h5{
-    padding-bottom:20px;
-}
-
-.service-menu a {
-    font-size: 30px;
-    text-decoration: underline;
-    color: #555;
-    margin-bottom: 20px; 
-    transition: font-size 0.3s, color 0.3s; 
-}
-
-.service-menu a:hover {
-    font-size: 32px; 
-    color: black;
-}
-
-.service-menu p {
-    margin: 10px 0; 
-}
-
-.service-info{
-    text-align: center;
-}
-
- .service-info img{
-    height:450px;
-    width: 100%;
-    margin-bottom: 50px;
-} 
-
-.bg-img2{ 
-    height: 500px;
-    width: 100%;
-    background-size: cover;
-    background-position: bottom center; 
-}
-
-#mani{
-    margin-bottom:50px;
-}
-
-.pedi-services{
-    padding-left: 30px;
-    font-size: small;
-    display: grid;
-    grid-template-columns: auto auto;
-    text-align: center;
-}
-
-.pedi-service{
-    margin: 50px;
-}
-
-.complimentary{
-    margin-bottom: 300px;
-}
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+  }
+  
+  .fade-in.loaded {
+    opacity: 1;
+  }
 
   /* site responsiveness ---------------------------------------------------
 
-/* Extra small devices (phones, 600px and down) */
-/* @media only screen and (max-width: 600px){
-
-                                                                                                                                                    
-} */
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width:767px){
-
-    .service-menu-container h1{
-        padding: 5px;
-        margin-bottom: 50px;
-        font-size: 1rem;
-    }
-
-    .pedi-services{
+Extra small devices (phones, 375px and down) */
+@media only screen and (max-width: 375px) {
+    .all-services{
         display: flex;
-        flex-direction: column;
-    }
-    
-    .pedi-service{
-        margin: 20px;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+     }
+     
+     .all-services h1{
+         margin:20px;
+         padding: 10px;
+         border-bottom:1px solid silver;
+         font-size: 18px;
+         text-align: center; 
+     }
+
+     .all-services h2{
+        font-size: 15px;
+        text-align: center;
+     }
+
+     .all-services h5{
+        font-size: 15px;
+     }
+     
+     .service-item{
+             display: grid;
+             grid-template-columns: auto;
+             align-items: center;
+             margin: 20px;
+             font-size: 12px;
+     }
+
+     .service-item img {
+        display: block;
+        margin: 0 auto; 
+        width: 50%;
+        border-radius: 10px;
     }
  
 }
 
+@media only screen and (min-width: 376px) and (max-width: 767px) {
+    .all-services{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+     }
+     
+     .all-services h1{
+         margin:20px;
+         padding: 10px;
+         border-bottom:1px solid silver;
+         font-size: 20px;
+     }
+
+     .all-services h2{
+        font-size: 18px;
+        text-align: center;
+     }
+
+     .all-services h5{
+        font-size: 18px;
+     }
+     
+     .service-item{
+             display: grid;
+             grid-template-columns: auto;
+             align-items: center;
+             margin: 20px;
+             font-size: 15px;
+     }
+
+     .service-item img {
+        display: block;
+        margin: 0 auto; 
+        width: 30%;
+        border-radius: 10px;
+    }
+
+    }
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width:768px) and (max-width:991px){
+    .all-services{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+     }
+     
+     .all-services h1{
+         margin:20px;
+         padding: 10px;
+         border-bottom:1px solid silver;
+         font-size: 25px;
+     }
 
+     .all-services h2{
+        font-size: 18px;
+        text-align: center;
+     }
+
+     .all-services h5{
+        font-size: 18px;
+     }
+     
+     .service-item{
+             display: grid;
+             grid-template-columns: auto;
+             align-items: center;
+             margin: 20px;
+             font-size: 15px;
+     }
+
+     .service-item img {
+        display: block;
+        margin: 0 auto; 
+        width:25%;
+        border-radius: 10px;
+    }
     
  
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width:992px) and (max-width:1200px){
+    .all-services{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+     }
+     
+     .all-services h1{
+         margin:20px;
+         padding: 10px;
+         border-bottom:1px solid silver;
+         font-size: 25px;
+     }
 
+     .all-services h2{
+        font-size: 18px;
+        text-align: center;
+     }
+
+     .all-services h5{
+        font-size: 18px;
+     }
+     
+     .service-item{
+             display: grid;
+             grid-template-columns: auto;
+             align-items: center;
+             margin: 20px;
+             font-size: 15px;
+     }
+
+     .service-item img {
+        display: block;
+        margin: 0 auto; 
+        width:25%;
+        border-radius: 10px;
+    }
 } 

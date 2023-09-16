@@ -1,49 +1,16 @@
-.footer-container{
-  border-top: solid lightgrey;
-  padding: 20px;
-    margin: 100px;
-    display: grid; 
-    justify-content: center;
-    justify-items: center;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-gap: 20px;
+.location a {
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+  color: inherit; 
 }
 
-.footer-container img{
-  width: 350px;
-}
-
-.business-info{
-    text-align: center;
-}
-
-.business-info h1{
-    margin-bottom: 100px;
-}
-
-.business-hours h3{
-  text-align: center;
-  font-size: 20px;
-}
-
-.business-hours h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.hours{
-  margin-bottom: 40px;
-  font-size: 18px;
-}
-
-.location{
-    margin-bottom: 40px;
+.location a:hover {
+  text-decoration: underline; 
 }
 
 .business-hours p {
     text-align: center;
-}
+} */
 
 .link {
     text-decoration: none;
@@ -71,81 +38,73 @@
     width: 100%;
   }
 
-  .contact {
-    text-align: center;
-    color: black; 
-}
-
-.contact a {
-    display: block;
-    margin-bottom: 20px;
+  .contact a{
     text-decoration: none;
     transition: text-decoration 0.3s ease;
-    color: inherit; 
+    color: grey; 
 }
 
 .contact a:hover {
     text-decoration: underline; 
 }
 
+.footer-icon {
+  font-size: 2rem; /* Adjust the size as needed */
+}
+
+.aboutus-footer p{
+  font-size:15px;
+}
+
+.aboutus-footer img {
+  width: 100%;
+  max-width: 100%;
+  height: auto; 
+}
+
 /* site responsiveness --------------------------------------------------- */
-/* Extra small devices (phones, 767px and down) */
-@media only screen and (max-width: 1200px){
 
-  .footer-container{
-      margin: 0;
-      padding: 10px;
-      display: flex;
-      height: 300px;
+
+/* Extra small devices (phones, 375px and down) */
+ @media only screen and (max-width: 375px){
+  .aboutus-footer img {
+    width: 50%;
+    max-width: 50%;
+    height: auto; 
   }
 
-  .footer-container img{
-    width: 200px;
-    height: auto;
+  .aboutus-footer p{
+    font-size:10px;
+  }
+                                                                                                                                            
+ }  
+
+/* Small devices (portrait tablets and large phones, 376px and up) */
+@media only screen and (min-width: 376px) and (max-width:767px){
+  .aboutus-footer img {
+    width: 50%;
+    max-width: 50%;
+    height: auto; 
   }
 
-  .business-info{
-   display: flex;
-   flex-direction: column;
-   font-size: 10px;
-   margin-top: 0;
-}
-
-.business-info2{
-  padding: 20px;
-}
-
-.business-info h1{
-  margin-bottom: 0;
-  font-size: 20px;
-  display: none;
-}
-
-.business-hours h2 {
-  margin-top: 30px;
-}
-
-.business-hours h3 {
-  font-size: 10px;
-  margin-top: 10px;
-}
-
-.hours{
-  margin: auto;
-  font-size: 10px;
-}
-
-.location{
-  margin: 10px;
-  margin-top: 0;
-}
-                                                                                                                                              
-}
-
-
-@media only screen and (min-width: 1200px) and (max-width: 1350px) {
-  .business-info h1{
-    margin-bottom: 0;
-    font-size: 25px;
+  .aboutus-footer p{
+    font-size:12px;
   }
+ 
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width:768px) and (max-width:992px){
+.aboutus-footer h6{
+  font-size: 14px;
+}
+.aboutus-footer p{
+  font-size: 12px;
+}
+.aboutus-footer img {
+  width: 100%;
+  max-width: 100%;
+  height: auto; 
+}
+}
+
