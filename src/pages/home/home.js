@@ -225,7 +225,7 @@ const Home = () => {
             
             <MDBNavbarLink className="browse-service-link">
                         <MDBBtn
-                        outline rounded className='mx-2 custom-hover fade-in' color='black'
+                        outline rounded className='mx-2 custom-hover' color='black'
                         href='services'
                         >
                         Browse Services

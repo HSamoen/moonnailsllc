@@ -17,14 +17,6 @@
     /* site responsiveness ---------------------------------------------------
 
 /* Extra small devices (phones, 375px and down) */
-/* @media only screen and (max-width: 375px){
-                                                                                                                                                    
-} */
-
-/* Small devices (portrait tablets and large phones, 376px and up) */
-/* Media query for screens between 376px and 767px */
-
-  
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width:768px) and (max-width:991px){

@@ -3,12 +3,6 @@ import { MDBListGroup, MDBListGroupItem } from 'mdb-react-ui-kit';
 import './services.css'
 
 export default function App() {
-    // useEffect(() => {
-    //     const elementsToFadeIn = document.querySelectorAll('.fade-in');
-    //     elementsToFadeIn.forEach((element) => {
-    //       element.classList.add('loaded');
-    //     });
-    //   }, []);
     useEffect(() => {
         const handleScroll = () => {
           const scrollY = window.scrollY;
@@ -18,7 +12,7 @@ export default function App() {
             const elementOffset = element.offsetTop;
             const windowHeight = window.innerHeight;
     
-            if (scrollY > elementOffset - windowHeight / 2) {
+            if (scrollY > elementOffset - windowHeight ) {
               element.classList.add('loaded');
             } else {
               element.classList.remove('loaded');
@@ -37,7 +31,7 @@ export default function App() {
     <div  className='all-services'>
         <div>
             <h1 className='fade-in'>ALL SERVICES</h1>
-        <div className='service-item fade-in' 
+        <div className='service-item fade-in' s
         >
             <div>
             <img src="/images/mani.jpeg" alt="mani" />
@@ -241,3 +235,5 @@ export default function App() {
     </div>
   );
 }
+
+
