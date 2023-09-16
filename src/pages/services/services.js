@@ -36,7 +36,7 @@ export default function App() {
     
     <div  className='all-services'>
         <div>
-            <h1 className='fade-in'>ALL SERVICES</h1>
+            <h1>ALL SERVICES</h1>
         <div className='service-item fade-in' 
         >
             <div>

@@ -39,7 +39,7 @@ export default function Cards() {
             alt='placeholder-img'
             position='top'
             // className='buinesscard-img'
-            className='buinesscard-img img-fluid fade-in'
+            className='buinesscard-img img-fluid'
           />
         
       </MDBCol>
@@ -48,7 +48,7 @@ export default function Cards() {
             src='/images/nailimg1.jpg'
             alt='placeholder-img'
             position='top'
-            className='card-img fade-in'
+            className='card-img'
           />
       </MDBCol>
       <MDBCol md={6} lg={3}>
@@ -56,7 +56,7 @@ export default function Cards() {
             src='/images/nailimg2.jpg'
             alt='placeholder-img'
             position='top'
-            className='card-img fade-in'
+            className='card-img'
           />
       </MDBCol>
       <MDBCol md={6} lg={3}>
@@ -64,7 +64,7 @@ export default function Cards() {
             src='/images/nailimg3.jpg'
             alt='placeholder-img'
             position='top'
-            className='card-img fade-in'
+            className='card-img'
           />
       </MDBCol>
 
