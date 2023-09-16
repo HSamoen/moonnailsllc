@@ -112,10 +112,6 @@ export default function App() {
                     Concord, NC 28027
                 </a>
               </p>
-              {/* <p>
-                <MDBIcon icon="envelope" className="me-3" />
-                info@example.com
-              </p> */}
               <p className='contact'>
                 <MDBIcon icon="phone" className="me-3" />
                 <a href="tel:704-979-1989">(704) 979-1989</a>
