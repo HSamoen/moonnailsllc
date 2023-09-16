@@ -49,7 +49,7 @@
 }
 
 .footer-icon {
-  font-size: 2rem; /* Adjust the size as needed */
+  font-size: 2rem; 
 }
 
 .aboutus-footer p{
@@ -62,10 +62,7 @@
   height: auto; 
 }
 
-/* site responsiveness --------------------------------------------------- */
 
-
-/* Extra small devices (phones, 375px and down) */
  @media only screen and (max-width: 375px){
   .aboutus-footer img {
     width: 50%;
@@ -79,7 +76,6 @@
                                                                                                                                             
  }  
 
-/* Small devices (portrait tablets and large phones, 376px and up) */
 @media only screen and (min-width: 376px) and (max-width:767px){
   .aboutus-footer img {
     width: 50%;
@@ -93,7 +89,6 @@
  
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width:768px) and (max-width:992px){
 .aboutus-footer h6{
   font-size: 14px;

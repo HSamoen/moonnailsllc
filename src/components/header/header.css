@@ -29,9 +29,7 @@
   opacity: 1;
 }
 
-  /* site responsiveness ---------------------------------------------------
 
-/* Extra small devices (phones, 375px and down) */
 @media only screen and (max-width: 375px){
   .header-des h1{
     font-size: 18px;
@@ -70,7 +68,7 @@
                                                                                                                                                     
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+
 @media only screen and (min-width:601px) and (max-width:767px){
 .mask h1{
   font-size: 25px;
@@ -86,7 +84,7 @@
 
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+
 @media only screen and (min-width:768px) and (max-width:991px){
 
   .mask h1{

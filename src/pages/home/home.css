@@ -140,9 +140,6 @@ font-size: 15px;
 }
 
 
-  /* site responsiveness ---------------------------------------------------
-
-Extra small devices (phones, 375px and down) */
 @media only screen and (max-width: 375px){
   body{
     padding: 5px;
@@ -267,7 +264,6 @@ Extra small devices (phones, 375px and down) */
                                                                                                                                                     
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 376px) and (max-width: 767px){
 
 
@@ -276,7 +272,6 @@ Extra small devices (phones, 375px and down) */
 }
 
   .featured-services{
-    /* padding: 30px; */
     display: flex;
     flex-direction: column;
     }
@@ -393,7 +388,7 @@ Extra small devices (phones, 375px and down) */
                                                                                                                                                     
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+
 @media only screen and (min-width:768px) and (max-width:991px){
 
   body{
@@ -549,7 +544,7 @@ font-size: 15px;
  
 } 
 
-/* Large devices (laptops/desktops, 992px and up) */
+
 @media only screen and (min-width:992px) and (max-width:1200px){
 
 body {

@@ -38,9 +38,7 @@
     opacity: 1;
   }
 
-  /* site responsiveness ---------------------------------------------------
 
-Extra small devices (phones, 375px and down) */
 @media only screen and (max-width: 375px) {
     .all-services{
         display: flex;
@@ -124,7 +122,7 @@ Extra small devices (phones, 375px and down) */
 
     }
 
-/* Medium devices (landscape tablets, 768px and up) */
+
 @media only screen and (min-width:768px) and (max-width:991px){
     .all-services{
         display: flex;
@@ -167,7 +165,7 @@ Extra small devices (phones, 375px and down) */
  
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
+
 @media only screen and (min-width:992px) and (max-width:1200px){
     .all-services{
         display: flex;
