@@ -15,10 +15,10 @@ export default function Header() {
 
   return (
     <header>
-      <div id='headersec' className='p-5 text-center bg-image header-container'>
-        <div className='header-des'>
-          <div className='d-flex justify-content-center align-items-center h-100'>
-            <div className='text-black'>
+      <div id='headersec' className='p-5 text-center bg-image header-container fade-in'>
+        <div className='header-des fade-in'>
+          <div className='d-flex justify-content-center align-items-center h-100 fade-in'>
+            <div className='text-black fade-in'>
               <h1 className='mb-3 fade-in'>Welcome</h1>
               <h3 className='fade-in'>We offer the highest level of services to our clients</h3>
               <h5 className='mb-4 fade-in'>Browse our services and make an appointment today</h5>
