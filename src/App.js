@@ -18,10 +18,10 @@ export default function App() {
       <Routes>
         <Route>
           <Route path="/" element={<Home />} exact/>
-          <Route path="services" element={<Services />} exact/>
-          <Route path="gallery" element={<Gallery />} exact/>
-          <Route path="contacts" element={<Contacts />} exact/>
-          <Route path="*" element={<NoPage />} exact/>
+          <Route path="/services" element={<Services />} exact/>
+          <Route path="/gallery" element={<Gallery />} exact/>
+          <Route path="/contacts" element={<Contacts />} exact/>
+          <Route path="/*" element={<NoPage />} exact/>
         </Route>
       </Routes>
       <Footer />
