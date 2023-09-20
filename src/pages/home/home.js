@@ -65,7 +65,7 @@ const Home = () => {
         <div className='services-options'>
           <h3>Manicure 
           <button className='serviceBtn' id ="option1" onClick={(e) => {toggleDiv(e)}}>⌄</button>
-            <div className ={isVisible.id === "option1" ? `option1` : "none"}>
+            <div className ={isVisible.id === "option1" ?  "dropdown-content open" : "dropdown-content"}>
               <p>+ Basic Manicure</p>
               <p>+ Spa Manicure</p>
               <p>+ Gel Manicure</p>
@@ -75,7 +75,7 @@ const Home = () => {
           </h3>
           <h3>Pedicure 
           <button className='serviceBtn' id ="option2" onClick={(e) => {toggleDiv(e)}}>⌄</button>
-            <div className ={isVisible.id === "option2" ? `option2` : "none"}>
+            <div className ={isVisible.id === "option2" ?  "dropdown-content open" : "dropdown-content"}>
               <p>+ Basic Pedicure</p>
               <p>+ Spa Pedicure</p>
               <p>+ Deluxe Pedicure</p>
@@ -85,7 +85,7 @@ const Home = () => {
           </h3>
           <h3>Full sets 
           <button className='serviceBtn' id ="option3" onClick={(e) => {toggleDiv(e)}}>⌄</button>
-            <div className ={isVisible.id === "option3" ? `option3` : "none"}>
+            <div className ={isVisible.id === "option3" ?  "dropdown-content open" : "dropdown-content"}>
               <p>+ Full Set Acrylic</p>
               <p>+ Full Set Acrylic w/ Gel Polish</p>
               <p>+ Full Set Solar Pink and White</p>
@@ -96,7 +96,7 @@ const Home = () => {
           </h3>
           <h3>Polish Changes 
           <button className='serviceBtn' id ="option4" onClick={(e) => {toggleDiv(e)}}>⌄</button>
-            <div className ={isVisible.id === "option4" ? `option4` : "none"}>
+            <div className ={isVisible.id === "option4" ?  "dropdown-content open" : "dropdown-content"}>
               <p>+ Nail Gel Polish</p>
               <p>+ Toes Gel polish</p>
               <p>+ Regular Color Nails</p>
