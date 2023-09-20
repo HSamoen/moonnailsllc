@@ -74,7 +74,10 @@ font-size: 1.5rem;
 
 .navbar-item {
   padding-right: 0; 
-  font-size: 10px;
+}
+
+.navbar-link{
+  font-size: 12px;
 }
 
 .business-name {
@@ -100,8 +103,11 @@ font-size: 1.5rem;
 
 .navbar-item {
   padding-right: 0; 
-  font-size: 10px;
   margin-left: 10px;
+}
+
+.navbar-link{
+  font-size: 15px;
 }
 
 .business-name {
@@ -129,6 +135,10 @@ font-size: 1.5rem;
     padding-right: 25px;
     margin-left: 10px;
 }
+
+.navbar-link{
+  font-size: 15px;
+}
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -139,6 +149,6 @@ font-size: 1.5rem;
 
 .navbar-item {
   padding-right: 0; 
-  font-size: 15px;
 }
+
 }
