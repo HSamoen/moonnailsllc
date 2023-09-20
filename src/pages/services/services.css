@@ -78,6 +78,11 @@
         width: 50%;
         border-radius: 10px;
     }
+
+    .no-des-services h5{
+        text-align: center;
+        font-size: 12px;
+    }
  
 }
 
@@ -120,6 +125,11 @@
         border-radius: 10px;
     }
 
+    .no-des-services h5{
+        text-align: center;
+        font-size: 15px;
+    }
+
     }
 
 
@@ -160,6 +170,11 @@
         margin: 0 auto; 
         width:25%;
         border-radius: 10px;
+    }
+
+    .no-des-services h5{
+        text-align: center;
+        font-size: 15px;
     }
     
  

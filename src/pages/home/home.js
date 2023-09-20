@@ -48,7 +48,7 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <div className="featured-services fade-in">
+      <div className="featured-services">
         <div className='featured-services-header'>
           <h1>Featured Services</h1>
           <MDBNavbarLink>

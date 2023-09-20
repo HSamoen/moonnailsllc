@@ -30,8 +30,8 @@ export default function App() {
     
     <div  className='all-services'>
         <div>
-            <h1 className='fade-in'>ALL SERVICES</h1>
-        <div className='service-item fade-in' s
+            <h1 >ALL SERVICES</h1>
+        <div className='service-item' s
         >
             <div>
             <img src="/images/mani.jpeg" alt="mani" />
@@ -47,12 +47,21 @@ export default function App() {
         </MDBListGroupItem>
         <MDBListGroupItem>
           <h5 className='fw-bold'>Spa Manicure</h5>
+          <p className='text-muted mb-0'>
+          Includes the basic cleaning of nails with cuticles trimmed, nails shaping, light exfoliation, massage, hot paraffin wax with choice of nail polish         
+          </p>
         </MDBListGroupItem>
         <MDBListGroupItem>
           <h5 className='fw-bold'>Gel Manicure</h5>
+          <p className='text-muted mb-0'>
+          Includes the basic cleaning of nails with cuticles trimmed, nails shaping, light exfoliation, massage with choice of gel polish     
+          </p>
         </MDBListGroupItem>
         <MDBListGroupItem>
           <h5 className='fw-bold'>SNS Manicure</h5>
+          <p className='text-muted mb-0'>
+          Includes the basic cleaning of nails with cuticles trimmed, nails shaping, light exfoliation, massage with choice of dipping powder          
+          </p>
         </MDBListGroupItem>
       </MDBListGroup>
             </div>
@@ -107,7 +116,7 @@ export default function App() {
             </div>
         </div>
 
-
+        <div className='no-des-services'>
         <div className='service-item fade-in' 
         >
             <div>
@@ -119,22 +128,22 @@ export default function App() {
             <h2 style={{marginBottom:50}}>FULLSETS/ FILL-INS</h2>
         </MDBListGroupItem>
         <MDBListGroupItem>
-          <h5 className='fw-bold'>Full Set Acrylic</h5>
+          <h5>Full Set Acrylic</h5>
         </MDBListGroupItem>
         <MDBListGroupItem>
-          <h5 className='fw-bold'>Full Set Acrylic w/ Gel Polish</h5>
+          <h5>Full Set Acrylic w/ Gel Polish</h5>
         </MDBListGroupItem>
         <MDBListGroupItem>
-          <h5 className='fw-bold'>Full Set Solar Pink and White</h5>
+          <h5>Full Set Solar Pink and White</h5>
         </MDBListGroupItem>
         <MDBListGroupItem>
-          <h5 className='fw-bold'>Full Set SNS</h5>
+          <h5>Full Set SNS</h5>
         </MDBListGroupItem>
         <MDBListGroupItem>
-          <h5 className='fw-bold'>Refill Acrylic</h5>
+          <h5>Refill Acrylic</h5>
         </MDBListGroupItem>
         <MDBListGroupItem>
-          <h5 className='fw-bold'>Refill Acrylic w/ Gel</h5>
+          <h5>Refill Acrylic w/ Gel</h5>
         </MDBListGroupItem>
       </MDBListGroup>
             </div>
@@ -230,6 +239,7 @@ export default function App() {
         </MDBListGroupItem>
       </MDBListGroup>
             </div>
+        </div>
         </div>
     </div>
     </div>
