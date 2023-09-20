@@ -295,7 +295,7 @@ font-size: 15px;
     }
 
     .featured-services h1{
-      font-size: 20px;
+      font-size: 22px;
     }
 
     .featured-services-header{
@@ -310,15 +310,15 @@ font-size: 15px;
     }
 
     .services-options h3{
-      font-size: 20px;
+      font-size: 22px;
     }
 
     .services-options p{
-      font-size: 12px;
+      font-size: 15px;
     }
 
     .aboutus-bg img {
-      height: 150px; 
+      height: 250px; 
       width: 100%; 
       object-fit: cover; 
       object-position: center bottom; 
@@ -331,12 +331,12 @@ font-size: 15px;
 
   .about-us-header h1{
     text-align: center;
-    font-size: 25px;
+    font-size: 28px;
     }
 
     .aboutus-sec2 p{
       text-align: center;
-      font-size: 15px;
+      font-size: 18px;
     }
     
     .about-us-container {
@@ -355,7 +355,7 @@ font-size: 15px;
     }
 
     .browse-gallery-link .custom-small-button {
-      font-size: 10px;
+      font-size: 15px;
     }
 
 
@@ -366,11 +366,11 @@ font-size: 15px;
     .our-services-container h1{
     text-align: center;
     margin: 50px;
-    font-size: 20px;
+    font-size: 22px;
     }
     
     .our-services-container .service-link h3 {
-      font-size: 15px;
+      font-size: 22px;
     }
 
     .service-link {
@@ -396,7 +396,7 @@ font-size: 15px;
     }
 
     .browse-service-link .custom-hover {
-      font-size: 10px;
+      font-size: 15px;
     }
                                                                                                                                                     
 }
@@ -554,7 +554,14 @@ font-size: 15px;
     padding: 100px;
     text-align: center;
 }
- 
+.browse-service-link .custom-hover {
+  font-size: 15px;
+}
+
+.browse-gallery-link .custom-small-button {
+  font-size: 15px;
+}
+
 } 
 
 
