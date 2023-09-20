@@ -1,15 +1,12 @@
 body{
     padding: 10px;
+    font-family: 'Bodoni Moda', sans-serif;
 }
 
 .layout {
   display: flex;
   gap: 16px;
 }
-
-body {
-    font-family: 'Bodoni Moda', sans-serif;
-  }
 
 .featured-services{
 padding: 100px;
@@ -199,7 +196,7 @@ font-size: 15px;
 
     .aboutus-sec2 p{
       text-align: center;
-      font-size: 10px;
+      font-size: 12px;
     }
     
     .about-us-container {
@@ -323,7 +320,7 @@ font-size: 15px;
 
     .aboutus-sec2 p{
       text-align: center;
-      font-size: 10px;
+      font-size: 15px;
     }
     
     .about-us-container {
@@ -477,7 +474,7 @@ font-size: 15px;
 }
 
 .aboutus-sec2 p{
-  font-size: 12px;
+  font-size: 18px;
 }
 
 .aboutus-sec2 img {
@@ -624,7 +621,7 @@ font-size: 15px;
 }
 
 .aboutus-sec2 p{
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .aboutus-sec2 img {

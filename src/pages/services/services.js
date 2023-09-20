@@ -161,16 +161,16 @@ export default function App() {
             <h2 style={{marginBottom:50}}>POLISH CHANGES</h2>
         </MDBListGroupItem>
         <MDBListGroupItem>
-          <h5 className='fw-bold'>Nail Gel Polish</h5>
+          <h5>Nail Gel Polish</h5>
         </MDBListGroupItem>
         <MDBListGroupItem>
-          <h5 className='fw-bold'>Toes Gel polish</h5>
+          <h5>Toes Gel polish</h5>
         </MDBListGroupItem>
         <MDBListGroupItem>
-          <h5 className='fw-bold'>Regular Color Nails</h5>
+          <h5>Regular Color Nails</h5>
         </MDBListGroupItem>
         <MDBListGroupItem>
-          <h5 className='fw-bold'>Regular Color Toes</h5>
+          <h5>Regular Color Toes</h5>
         </MDBListGroupItem>
       </MDBListGroup>
             </div>
@@ -188,28 +188,28 @@ export default function App() {
             <h2 style={{marginBottom:50}}>WAX/ HAIR REMOVAL</h2>
         </MDBListGroupItem>
         <MDBListGroupItem>
-          <h5 className='fw-bold'>Eyebrow</h5>
+          <h5>Eyebrow</h5>
         </MDBListGroupItem>
         <MDBListGroupItem>
-          <h5 className='fw-bold'>Lip</h5>
+          <h5>Lip</h5>
         </MDBListGroupItem>
         <MDBListGroupItem>
-          <h5 className='fw-bold'>Chin</h5>
+          <h5>Chin</h5>
         </MDBListGroupItem>
         <MDBListGroupItem>
-          <h5 className='fw-bold'>Cheek</h5>
+          <h5>Cheek</h5>
         </MDBListGroupItem>
         <MDBListGroupItem>
-          <h5 className='fw-bold'>Full Face</h5>
+          <h5>Full Face</h5>
         </MDBListGroupItem>
         <MDBListGroupItem>
-          <h5 className='fw-bold'>Under-arm</h5>
+          <h5>Under-arm</h5>
         </MDBListGroupItem>
         <MDBListGroupItem>
-          <h5 className='fw-bold'>Half Legs</h5>
+          <h5>Half Legs</h5>
         </MDBListGroupItem>
         <MDBListGroupItem>
-          <h5 className='fw-bold'>Full Legs</h5>
+          <h5>Full Legs</h5>
         </MDBListGroupItem>
       </MDBListGroup>
             </div>
@@ -226,16 +226,16 @@ export default function App() {
             <h2 style={{marginBottom:50}}>KIDS MENU</h2>
         </MDBListGroupItem>
         <MDBListGroupItem>
-          <h5 className='fw-bold'>Kids Pedicure</h5>
+          <h5>Kids Pedicure</h5>
         </MDBListGroupItem>
         <MDBListGroupItem>
-          <h5 className='fw-bold'>Kids Manicure</h5>
+          <h5>Kids Manicure</h5>
         </MDBListGroupItem>
         <MDBListGroupItem>
-          <h5 className='fw-bold'>Kids Polish Toes</h5>
+          <h5>Kids Polish Toes</h5>
         </MDBListGroupItem>
         <MDBListGroupItem>
-          <h5 className='fw-bold'>Kids Polish Hands</h5>
+          <h5>Kids Polish Hands</h5>
         </MDBListGroupItem>
       </MDBListGroup>
             </div>

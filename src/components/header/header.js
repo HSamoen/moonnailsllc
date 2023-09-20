@@ -20,10 +20,10 @@ export default function Header() {
           <div className='d-flex justify-content-center align-items-center h-100 fade-in'>
             <div className='text-black fade-in'>
               <h1 className='mb-3 fade-in'>Welcome</h1>
-              <h3 className='fade-in'>We offer the highest level of services to our clients</h3>
-              <h5 className='mb-4 fade-in'>Browse our services and make an appointment today</h5>
+              <h3>We offer the highest level of services to our clients</h3>
+              <h5 className='mb-4'>Browse our services and make an appointment today</h5>
              
-              <div className='header-buttons fade-in'>
+              <div className='header-buttons'>
                 <MDBNavbarLink>
                   <MDBBtn
                     outline

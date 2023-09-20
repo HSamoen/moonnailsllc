@@ -37,19 +37,19 @@
 
 @media only screen and (max-width: 375px){
     .message p{
-        font-size: 10px;
+        font-size: 12px;
     }
     .message a{
-        font-size: 10px;
+        font-size: 12px;
     }                                                                                                                                             
    }
    
    @media only screen and (min-width:376px) and (max-width:767px){
     .message p{
-        font-size: 12px;
+        font-size: 15px;
     }
     .message a{
-        font-size: 12px;
+        font-size: 15px;
     }
   }
 
