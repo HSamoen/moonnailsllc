@@ -38,17 +38,17 @@
 }
 
 
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 414px){
   .header-des h1{
-    font-size: 18px;
+    font-size: 20px;
   }
   
   .header-des h3{
-    font-size: 12px;
+    font-size: 15px;
   }
   
   .header-des h5{
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .custom-hover:hover {
@@ -63,7 +63,7 @@
     background-image: url('https://ded7t1cra1lh5.cloudfront.net/media/630558/ec909bc49d8e3d063b85500018ac6783371d9c84/original/spa_facial_treatment.jpg?1615518781');
     background-size: cover; 
     background-position: center center;
-    background-attachment: fixed;
+    background-attachment: local;
   }
 
   .custom-hover {
@@ -79,7 +79,7 @@
 }
 
 
-@media only screen and (min-width:601px) and (max-width:767px){
+@media only screen and (min-width:415px) and (max-width:767px){
 .mask h1{
   font-size: 25px;
 }
