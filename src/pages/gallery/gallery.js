@@ -36,7 +36,7 @@ export default function Cards() {
       <MDBCol md={6} lg={3}>
           <MDBCardImage
             src='/images/businesscard.jpg'
-            alt='placeholder-img'
+            alt=''
             position='top'
             // className='buinesscard-img'
             className='buinesscard-img img-fluid'
@@ -46,7 +46,7 @@ export default function Cards() {
       <MDBCol md={6} lg={3}>
           <MDBCardImage
             src='/images/nailimg1.jpg'
-            alt='placeholder-img'
+            alt=''
             position='top'
             className='card-img'
           />
@@ -54,7 +54,7 @@ export default function Cards() {
       <MDBCol md={6} lg={3}>
           <MDBCardImage
             src='/images/nailimg2.jpg'
-            alt='placeholder-img'
+            alt=''
             position='top'
             className='card-img'
           />
@@ -62,7 +62,7 @@ export default function Cards() {
       <MDBCol md={6} lg={3}>
           <MDBCardImage
             src='/images/nailimg3.jpg'
-            alt='placeholder-img'
+            alt=''
             position='top'
             className='card-img'
           />
@@ -77,7 +77,7 @@ export default function Cards() {
       <MDBCol md={6} lg={3}>
           <MDBCardImage
             src='/images/gall1.jpg'
-            alt='placeholder-img'
+            alt=''
             position='top'
             className='card-img fade-in'
           />
@@ -86,7 +86,7 @@ export default function Cards() {
       <MDBCol md={6} lg={3}>
           <MDBCardImage
             src='/images/gall2.jpg'
-            alt='placeholder-img'
+            alt=''
             position='top'
             className='card-img fade-in'
           />
@@ -95,7 +95,7 @@ export default function Cards() {
       <MDBCol md={6} lg={3}>
           <MDBCardImage
             src='/images/gall3.jpg'
-            alt='placeholder-img'
+            alt=''
             position='top'
             className='card-img fade-in'
           />
@@ -104,7 +104,7 @@ export default function Cards() {
       <MDBCol md={6} lg={3}>
           <MDBCardImage
             src='/images/gall4.jpg'
-            alt='placeholder-img'
+            alt=''
             position='top'
             className='card-img fade-in'
           />
@@ -113,7 +113,7 @@ export default function Cards() {
       <MDBCol md={6} lg={3}>
           <MDBCardImage
              src='/images/gall5.jpg'
-            alt='placeholder-img'
+            alt=''
             position='top'
             className='card-img fade-in'
           />
@@ -122,7 +122,7 @@ export default function Cards() {
       <MDBCol md={6} lg={3}>
           <MDBCardImage
              src='/images/gall6.jpg'
-             alt='placeholder-img'
+             alt=''
             position='top'
             className='card-img fade-in'
           />
@@ -131,7 +131,7 @@ export default function Cards() {
       <MDBCol md={6} lg={3}>
           <MDBCardImage
              src='/images/gall7.jpg'
-             alt='placeholder-img'
+             alt=''
             position='top'
             className='card-img fade-in'
           />
@@ -141,7 +141,7 @@ export default function Cards() {
       <MDBCol md={6} lg={3}>
           <MDBCardImage
              src='/images/gall10.jpg'
-             alt='placeholder-img'
+             alt=''
             position='top'
             className='card-img fade-in'
           />
@@ -150,7 +150,7 @@ export default function Cards() {
       <MDBCol md={6} lg={3}>
           <MDBCardImage
              src='/images/gall11.jpg'
-             alt='placeholder-img'
+             alt=''
             position='top'
             className='card-img fade-in'
           />
@@ -159,7 +159,7 @@ export default function Cards() {
       <MDBCol md={6} lg={3}>
           <MDBCardImage
              src='/images/gall12.jpg'
-             alt='placeholder-img'
+             alt=''
             position='top'
             className='card-img fade-in'
           />
@@ -168,7 +168,7 @@ export default function Cards() {
       <MDBCol md={6} lg={3}>
           <MDBCardImage
              src='/images/gall13.jpg'
-             alt='placeholder-img'
+             alt=''
             position='top'
             className='card-img fade-in'
           />
@@ -177,7 +177,7 @@ export default function Cards() {
       <MDBCol md={6} lg={3}>
           <MDBCardImage
              src='/images/gall14.jpg'
-             alt='placeholder-img'
+             alt=''
             position='top'
             className='card-img fade-in'
           />
@@ -186,7 +186,7 @@ export default function Cards() {
       <MDBCol md={6} lg={3}>
           <MDBCardImage
              src='/images/gall15.jpg'
-             alt='placeholder-img'
+             alt=''
             position='top'
             className='card-img fade-in'
           />
@@ -195,7 +195,7 @@ export default function Cards() {
       <MDBCol md={6} lg={3}>
           <MDBCardImage
              src='/images/gall16.jpg'
-             alt='placeholder-img'
+             alt=''
             position='top'
             className='card-img fade-in'
           />
@@ -204,7 +204,7 @@ export default function Cards() {
       <MDBCol md={6} lg={3}>
           <MDBCardImage
              src='/images/gall17.jpg'
-             alt='placeholder-img'
+             alt=''
             position='top'
             className='card-img fade-in'
           />
@@ -213,7 +213,7 @@ export default function Cards() {
       <MDBCol md={6} lg={3}>
           <MDBCardImage
              src='/images/gall18.jpg'
-             alt='placeholder-img'
+             alt=''
             position='top'
             className='card-img fade-in'
           />
@@ -222,7 +222,7 @@ export default function Cards() {
       <MDBCol md={6} lg={3}>
           <MDBCardImage
              src='/images/gall19.jpg'
-             alt='placeholder-img'
+             alt=''
             position='top'
             className='card-img fade-in'
           />
@@ -231,7 +231,7 @@ export default function Cards() {
       <MDBCol md={6} lg={3}>
           <MDBCardImage
              src='/images/gall20.jpg'
-             alt='placeholder-img'
+             alt=''
             position='top'
             className='card-img fade-in'
           />
@@ -240,7 +240,7 @@ export default function Cards() {
       <MDBCol md={6} lg={3}>
           <MDBCardImage
              src='/images/gall21.jpg'
-             alt='placeholder-img'
+             alt=''
             position='top'
             className='card-img fade-in'
           />
@@ -250,7 +250,16 @@ export default function Cards() {
       <MDBCol md={6} lg={3}>
           <MDBCardImage
              src='/images/gall22.jpg'
-             alt='placeholder-img'
+             alt=''
+            position='top'
+            className='card-img fade-in'
+          />
+      </MDBCol>
+
+      <MDBCol md={6} lg={3}>
+          <MDBCardImage
+             src='/images/salon.jpg'
+             alt=''
             position='top'
             className='card-img fade-in'
           />
