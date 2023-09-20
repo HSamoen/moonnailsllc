@@ -126,7 +126,7 @@
   }
 
 .aboutus-footer h6{
-  font-size: 14px;
+  font-size: 10px;
 }
 .aboutus-footer p{
   font-size: 12px;
@@ -140,7 +140,7 @@
 
  .map-responsive iframe {
   border: 0px;
-  width: 120%;
+  width: 150%;
   height: 200px; 
 }
 }
